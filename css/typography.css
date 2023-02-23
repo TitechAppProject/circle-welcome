@@ -1,0 +1,62 @@
+.pagetitle {
+    /* JP/pagetitle */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.pop-up_title {
+    /* JP/pop-up title */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.copy {
+    /* JP/copy */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.subcopy {
+    /* JP/subcopy */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.description {
+    /* JP/discription */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.section_title {
+    /* JP/section title */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.caption {
+    /* JP/caption */
+    font-family: 'Hiragino Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+}

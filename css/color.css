@@ -1,0 +1,18 @@
+:root {
+    --brand-color-primary: #3b91ac;
+    --brand-color-secondary: #69cc99;
+    --brand-color-gradation: linear-gradient(90deg, #005396 0%, #75CFC1 100%);
+
+    --base-color-primary: #333333;
+    --base-color-secondary: #3d3d42;
+    --base-color-disabled: #e0e0e0;
+    --base-color-white: #ffffff;
+
+    --background-color-white: #ffffff;
+    --base-color-gray: #efefef;
+
+    --accent-color: #e5a894;
+
+    --error-color: #ea3223;
+    --warning-color: #d8ac3d;
+}
