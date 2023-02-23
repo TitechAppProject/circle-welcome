@@ -1,0 +1,265 @@
+body {
+    height: 100%;
+    position: relative;
+    background: var(--background-color-white);
+}
+
+header {
+    position: absolute;
+    width: 1280px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+    /* sticky */
+    position: -webkit-sticky;
+    position: sticky;
+
+    /* Base/white */
+    background: var(--background-color-white);
+
+    /* Shadow/main */
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+
+#header_logo {
+    position: absolute;
+    width: 310.22px;
+    height: 40px;
+    left: 20px;
+    top: 20.5px;
+}
+
+.header_right {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    width: 361px;
+    height: 44px;
+    right: 49px;
+    top: 18px;
+}
+
+.header_right_toc {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 153px;
+    height: 21px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header_right_toc_top {
+    width: 100px;
+    height: 21px;
+
+    color: var(--base-color-secondary);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header_right_toc_faq {
+    width: 29px;
+    height: 21px;
+
+    color: var(--base-color-secondary);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.header_right_button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 10px;
+
+    width: 176px;
+    height: 44px;
+
+    /* Brand/primary */
+    background: var(--brand-color-primary);
+    border-radius: 1000px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.header_right_button_text {
+    width: 128px;
+    height: 24px;
+
+    color: var(--base-color-white);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+footer {
+    position: absolute;
+    width: 1280px;
+    height: 342px;
+    left: 0px;
+    /* top: 3094px; */
+
+    background-color: var(--brand-color-primary);
+}
+
+#footer_logo {
+    position: absolute;
+    width: 310.22px;
+    height: 40px;
+    left: 128px;
+    top: 60px;
+}
+
+.footer_about {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    /* width: 139px;
+    height: 156px; */
+    left: 534.22px;
+    top: 68px;
+
+    color: var(--base-color-white);
+}
+
+.footer_about_circle {
+    /* width: 111px;
+    height: 21px; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer_about_titechapp {
+    /* width: 82px;
+    height: 21px; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.footer_about_titechinfo {
+    /* width: 85px;
+    height: 21px; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.footer_about_pp {
+    /* width: 139px;
+    height: 21px; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.footer_toc {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 103px;
+    height: 66px;
+    left: 769.22px;
+    top: 68px;
+
+    color: var(--base-color-white);
+}
+
+.footer_toc_top {
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer_toc_faq {
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer_button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 176px;
+    height: 44px;
+    left: 968.22px;
+    top: 60px;
+
+    background: var(--base-color-white);
+    border-radius: 1000px;
+}
+
+.footer_button_text {
+    width: 128px;
+    height: 24px;
+
+    color: var(--base-color-primary)
+}
+
+.copyright {
+    position: absolute;
+    width: 339px;
+    height: 21px;
+    left: 471px;
+    top: 294px;
+
+    color: var(--base-color-white);
+}
