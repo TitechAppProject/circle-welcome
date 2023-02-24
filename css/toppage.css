@@ -4,9 +4,11 @@ body {
     background: var(--background-color-white);
 }
 
+/* header */
+
 header {
-    position: absolute;
-    width: 1280px;
+    /* position: absolute; */
+    /* width: 1280px; */
     height: 80px;
     left: 0px;
     top: 0px;
@@ -23,7 +25,7 @@ header {
 }
 
 #header_logo {
-    position: absolute;
+    /* position: absolute; */
     width: 310.22px;
     height: 40px;
     left: 20px;
@@ -38,7 +40,7 @@ header {
     padding: 0px;
     gap: 32px;
 
-    position: absolute;
+    /* position: absolute; */
     width: 361px;
     height: 44px;
     right: 49px;
@@ -120,19 +122,71 @@ header {
     flex-grow: 0;
 }
 
+/* content */
+.top {
+    /* position: absolute; */
+    /* width: 1280px; */
+    height: 440px;
+    left: 0px;
+    top: 80px;
+    background: var(--brand-color-gradation);
+}
+
+
+.top_left {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    /* position: absolute; */
+    width: 557px;
+    height: 251px;
+    left: 128px;
+    top: 94px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1024px;
+    height: 248px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+/* footer */
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     width: 1280px;
     height: 342px;
     left: 0px;
-    /* top: 3094px; */
+    top: 3094px;
 
     background-color: var(--brand-color-primary);
 }
 
 #footer_logo {
-    position: absolute;
+    /* position: absolute; */
     width: 310.22px;
     height: 40px;
     left: 128px;
@@ -147,7 +201,7 @@ footer {
     padding: 0px;
     gap: 24px;
 
-    position: absolute;
+    /* position: absolute; */
     /* width: 139px;
     height: 156px; */
     left: 534.22px;
@@ -205,7 +259,7 @@ footer {
     padding: 0px;
     gap: 24px;
 
-    position: absolute;
+    /* position: absolute; */
     width: 103px;
     height: 66px;
     left: 769.22px;
@@ -237,7 +291,7 @@ footer {
     padding: 0px 24px;
     gap: 10px;
 
-    position: absolute;
+    /* position: absolute; */
     width: 176px;
     height: 44px;
     left: 968.22px;
@@ -255,7 +309,7 @@ footer {
 }
 
 .copyright {
-    position: absolute;
+    /* position: absolute; */
     width: 339px;
     height: 21px;
     left: 471px;
