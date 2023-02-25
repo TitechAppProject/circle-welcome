@@ -4,9 +4,12 @@ body {
     background: var(--background-color-white);
 }
 
+/* header */
+
 header {
-    position: absolute;
-    width: 1280px;
+    /* window 基準 */
+    position: absolute; 
+    width: 100%;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -15,7 +18,6 @@ header {
     position: -webkit-sticky;
     position: sticky;
 
-    /* Base/white */
     background: var(--background-color-white);
 
     /* Shadow/main */
@@ -23,6 +25,7 @@ header {
 }
 
 #header_logo {
+    /* window 基準 */
     position: absolute;
     width: 310.22px;
     height: 40px;
@@ -31,18 +34,14 @@ header {
 }
 
 .header_right {
-    /* Auto layout */
     display: flex;
+    justify-content: flex-end; /* 右寄せ */
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    margin: 0px;
+    padding-top: 18px;
+    padding-right: 49px;
     gap: 32px;
-
-    position: absolute;
-    width: 361px;
-    height: 44px;
-    right: 49px;
-    top: 18px;
 }
 
 .header_right_toc {
@@ -53,37 +52,25 @@ header {
     padding: 0px;
     gap: 24px;
 
-    width: 153px;
-    height: 21px;
-
     /* Inside auto layout */
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .header_right_toc_top {
-    width: 100px;
-    height: 21px;
-
     color: var(--base-color-secondary);
 
     /* Inside auto layout */
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .header_right_toc_faq {
-    width: 29px;
-    height: 21px;
-
     color: var(--base-color-secondary);
 
     /* Inside auto layout */
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 .header_right_button {
@@ -95,7 +82,6 @@ header {
     padding: 0px 24px;
     gap: 10px;
 
-    width: 176px;
     height: 44px;
 
     /* Brand/primary */
@@ -105,38 +91,142 @@ header {
     /* Inside auto layout */
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 .header_right_button_text {
-    width: 128px;
-    height: 24px;
-
     color: var(--base-color-white);
 
     /* Inside auto layout */
     flex: none;
     order: 0;
-    flex-grow: 0;
+}
+
+/* content */
+.top {
+    /* position: absolute; */
+    width: 100%;
+    height: 440px;
+    left: 0px;
+    /* top: 80px; */
+    background: var(--brand-color-gradation);
+}
+
+.top_left {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 94px;
+    padding-left: 128px;
+    gap: 24px;
+
+    /* position: absolute; */
+    /* width: 557px;
+    height: 251px;
+    left: 128px;
+    top: 94px; */
+
+    margin: 0px;
+}
+
+.top_left_copy {
+    color: var(--base-color-white);
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+}
+
+.top_left_text {
+    color: var(--base-color-white);
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+}
+
+.top_left_button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+
+    width: 208px;
+    height: 44px;
+
+    /* Base/white */
+    background: var(--background-color-white);
+    /* Shadow/main */
+
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 1000px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+}
+
+.top_left_button_text {
+    /* Base/primary */
+    color: var(--base-color-primary);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+    padding-left: 128px;
+    padding-top: 90px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1024px;
+    height: 248px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
 }
 
 
+/* footer */
+
 footer {
-    position: absolute;
-    width: 1280px;
+    width: 100%;
     height: 342px;
-    left: 0px;
-    /* top: 3094px; */
 
     background-color: var(--brand-color-primary);
 }
 
+.footer_menu {
+    padding: 60px 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* gap: 96px; */
+}
+
 #footer_logo {
-    position: absolute;
+    /* position: absolute; */
     width: 310.22px;
     height: 40px;
-    left: 128px;
-    top: 60px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 }
 
 .footer_about {
@@ -147,13 +237,17 @@ footer {
     padding: 0px;
     gap: 24px;
 
-    position: absolute;
+    /* position: absolute; */
     /* width: 139px;
     height: 156px; */
     left: 534.22px;
     top: 68px;
 
     color: var(--base-color-white);
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
 }
 
 .footer_about_circle {
@@ -163,7 +257,6 @@ footer {
     /* Inside auto layout */
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .footer_about_titechapp {
@@ -173,7 +266,6 @@ footer {
     /* Inside auto layout */
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 
@@ -184,7 +276,6 @@ footer {
     /* Inside auto layout */
     flex: none;
     order: 2;
-    flex-grow: 0;
 }
 
 .footer_about_pp {
@@ -194,7 +285,6 @@ footer {
     /* Inside auto layout */
     flex: none;
     order: 3;
-    flex-grow: 0;
 }
 
 .footer_toc {
@@ -205,27 +295,29 @@ footer {
     padding: 0px;
     gap: 24px;
 
-    position: absolute;
+    /* position: absolute; */
     width: 103px;
     height: 66px;
     left: 769.22px;
     top: 68px;
 
     color: var(--base-color-white);
+
+    flex: none;
+    order: 2;
+    flex-grow: 1;
 }
 
 .footer_toc_top {
     /* Inside auto layout */
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .footer_toc_faq {
     /* Inside auto layout */
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 .footer_button {
@@ -237,7 +329,7 @@ footer {
     padding: 0px 24px;
     gap: 10px;
 
-    position: absolute;
+    /* position: absolute; */
     width: 176px;
     height: 44px;
     left: 968.22px;
@@ -245,6 +337,10 @@ footer {
 
     background: var(--base-color-white);
     border-radius: 1000px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
 }
 
 .footer_button_text {
@@ -254,12 +350,8 @@ footer {
     color: var(--base-color-primary)
 }
 
-.copyright {
-    position: absolute;
-    width: 339px;
-    height: 21px;
-    left: 471px;
-    top: 294px;
-
+.footer_copyright {
+    padding-bottom: 27px;
+    text-align: center;
     color: var(--base-color-white);
 }
