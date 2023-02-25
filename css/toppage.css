@@ -205,21 +205,28 @@ header {
 /* footer */
 
 footer {
-    /* position: absolute; */
-    width: 1280px;
+    width: 100%;
     height: 342px;
-    left: 0px;
-    top: 3094px;
 
     background-color: var(--brand-color-primary);
+}
+
+.footer_menu {
+    padding: 60px 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* gap: 96px; */
 }
 
 #footer_logo {
     /* position: absolute; */
     width: 310.22px;
     height: 40px;
-    left: 128px;
-    top: 60px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 }
 
 .footer_about {
@@ -237,6 +244,10 @@ footer {
     top: 68px;
 
     color: var(--base-color-white);
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
 }
 
 .footer_about_circle {
@@ -291,6 +302,10 @@ footer {
     top: 68px;
 
     color: var(--base-color-white);
+
+    flex: none;
+    order: 2;
+    flex-grow: 1;
 }
 
 .footer_toc_top {
@@ -322,6 +337,10 @@ footer {
 
     background: var(--base-color-white);
     border-radius: 1000px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
 }
 
 .footer_button_text {
@@ -331,12 +350,8 @@ footer {
     color: var(--base-color-primary)
 }
 
-.copyright {
-    /* position: absolute; */
-    width: 339px;
-    height: 21px;
-    left: 471px;
-    top: 294px;
-
+.footer_copyright {
+    padding-bottom: 27px;
+    text-align: center;
     color: var(--base-color-white);
 }
