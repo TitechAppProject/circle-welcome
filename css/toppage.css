@@ -96,6 +96,7 @@ header {
 
 .header_right_button_text {
     color: var(--base-color-white);
+    text-align: center;
 
     /* Inside auto layout */
     flex: none;
@@ -172,6 +173,7 @@ header {
 .top_left_button_text {
     /* Base/primary */
     color: var(--base-color-primary);
+    text-align: center;
 
     /* Inside auto layout */
     flex: none;
@@ -251,6 +253,10 @@ header {
     gap: 64px;
 }
 
+.main_service {
+    flex-grow: 0;
+}
+
 .main_services_card {
     flex-grow: 0;
 
@@ -270,7 +276,7 @@ header {
 }
 
 .main_services_card_title {
-
+    color: var(--base-color-primary);
 }
 
 .main_services {
@@ -329,54 +335,11 @@ footer {
     padding: 0px;
     gap: 24px;
 
-    /* position: absolute; */
-    /* width: 139px;
-    height: 156px; */
-    left: 534.22px;
-    top: 68px;
-
     color: var(--base-color-white);
 
     flex: none;
     order: 1;
     flex-grow: 1;
-}
-
-.footer_about_circle {
-    /* width: 111px;
-    height: 21px; */
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-}
-
-.footer_about_titechapp {
-    /* width: 82px;
-    height: 21px; */
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-}
-
-
-.footer_about_titechinfo {
-    /* width: 85px;
-    height: 21px; */
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-}
-
-.footer_about_pp {
-    /* width: 139px;
-    height: 21px; */
-
-    /* Inside auto layout */
-    flex: none;
-    order: 3;
 }
 
 .footer_toc {
@@ -436,8 +399,7 @@ footer {
 }
 
 .footer_button_text {
-    width: 128px;
-    height: 24px;
+    text-align: center;
 
     color: var(--base-color-primary)
 }
