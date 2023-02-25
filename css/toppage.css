@@ -8,7 +8,7 @@ body {
 
 header {
     /* window 基準 */
-    position: absolute; 
+    position: absolute;
     width: 100%;
     height: 80px;
     left: 0px;
@@ -35,7 +35,8 @@ header {
 
 .header_right {
     display: flex;
-    justify-content: flex-end; /* 右寄せ */
+    justify-content: flex-end;
+    /* 右寄せ */
     flex-direction: row;
     align-items: center;
     margin: 0px;
@@ -101,7 +102,8 @@ header {
     order: 0;
 }
 
-/* content */
+/* top */
+
 .top {
     /* position: absolute; */
     width: 100%;
@@ -176,31 +178,122 @@ header {
     order: 0;
 }
 
+/* main - common part */
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 80px;
     padding-left: 128px;
+    padding-right: 128px;
     padding-top: 90px;
+    padding-bottom: 90px;
 }
 
-.services {
+.main_part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 48px;
+
+    flex: none;
+    order: 0;
+}
+
+.main_sectionname {
+    /* pop-up_title */
+    color: var(--base-color-primary);
+}
+
+.main_sectiontext {
+    /* caption */
+    color: var(--base-color-primary);
+}
+
+.main_subsectionname {
+    /* copy */
+    color: var(--brand-color-primary);
+}
+
+.main_subsectiontext {
+    /* subcopy */
+    color: var(--base-color-secondary);
+}
+
+.main_description {
+    /* description */
+    color: var(--base-color-primary);
+}
+
+/* main - exception */
+/* - services */
+.main_services {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
 
-    width: 1024px;
-    height: 248px;
-
-    /* Inside auto layout */
     flex: none;
     order: 0;
 }
 
+.main_services_contents {
+    flex: none;
+    order: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 64px;
+}
+
+.main_services_card {
+    flex-grow: 0;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px 24px;
+    gap: 16px;
+
+    /* width: 464px; */
+    height: 180px;
+
+    background: var(--base-color-white);
+    border: 1px solid var(--base-color-disabled);
+    border-radius: 16px;
+}
+
+.main_services_card_title {
+
+}
+
+.main_services {
+    /* gapのみ32px */
+    gap: 32px;
+}
+
+/* - cando */
+.main_cando_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.main_cando_subsection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 48px;
+}
 
 /* footer */
 
@@ -220,7 +313,6 @@ footer {
 }
 
 #footer_logo {
-    /* position: absolute; */
     width: 310.22px;
     height: 40px;
 
