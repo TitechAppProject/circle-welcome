@@ -4,7 +4,7 @@
     --brand-color-gradation: linear-gradient(90deg, #005396 0%, #75CFC1 100%);
 
     --base-color-primary: #333333;
-    --base-color-secondary: #3d3d42;
+    --base-color-secondary: rgba(61, 61, 66, 0.6);
     --base-color-disabled: #e0e0e0;
     --base-color-white: #ffffff;
 
