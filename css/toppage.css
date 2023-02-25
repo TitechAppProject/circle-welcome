@@ -246,18 +246,21 @@ header {
     flex: none;
     order: 1;
 
+    align-self: stretch;
+
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px 16px;
+    align-items: center;
     gap: 64px;
+    padding: 0px 16px;
 }
 
 .main_service {
-    flex-grow: 0;
+    flex: none;
+    flex-grow: 1;
 }
 
-.main_services_card {
+.main_service_card {
     flex-grow: 0;
 
     box-sizing: border-box;
@@ -275,13 +278,82 @@ header {
     border-radius: 16px;
 }
 
-.main_services_card_title {
-    color: var(--base-color-primary);
+.main_service_card_header {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
 }
 
-.main_services {
-    /* gapのみ32px */
-    gap: 32px;
+.main_service_card_title {
+    /* copy */
+    color: var(--base-color-primary);
+    flex-grow: 1;
+    /* width: 280px; */
+}
+
+.main_service_card_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 10px;
+
+    width: 128px;
+    height: 44px;
+
+    /* Brand/secondary */
+    background: var(--brand-color-secondary);
+    border-radius: 1000px;
+}
+
+.main_service_card_button_text {
+    /* subcopy */
+    color: var(--base-color-white);
+}
+
+.main_service_card_content {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    /* width: 416px; */
+}
+
+.main_service_card_description {
+    /* caption */
+    color: var(--base-color-primary);
+    width: 320px;
+    flex-grow: 1;
+}
+
+#main_service_titechapp {
+    width: 80px;
+    height: 80px;
+
+    background: linear-gradient(180deg, #1CF5D4 0%, #16BDA4 97.22%);
+    border-radius: 10.6667px;
+}
+
+#main_service_titechinfo {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3.33px;
+
+    width: 80px;
+    height: 80px;
 }
 
 /* - cando */
@@ -300,6 +372,120 @@ header {
     padding: 0px;
     gap: 48px;
 }
+
+/* - invite */
+.main_invite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 160px;
+    width: 100%;
+    padding: 37px 60px;
+    gap: 32px;
+    background: var(--brand-color-gradation);
+    border-radius: 16px;
+}
+
+.main_invite_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    color: var(--base-color-white);
+}
+
+.main_invite_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+
+    background: var(--base-color-white);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 1000px;
+}
+
+.main_invite_button_text {
+    /* subcopy */
+    width: 160px;
+    color: var(--base-color-primary);
+}
+
+/* - environment */
+.main_environment_subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.main_environment_subsubsections {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 65px;
+
+    width: 100%;
+}
+
+.main_environment_subsubsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 100%;
+
+    color: var(--base-color-primary);
+}
+
+/* - faq */
+.main_faq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    /* gap: 100px; */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main_faq_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    flex-grow: 1;
+}
+
+.main_faq_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+
+    background: var(--brand-color-secondary);
+    border-radius: 1000px;
+}
+
+.main_faq_button_text {
+    /* subcopy */
+    color: var(--base-color-white);
+}
+
+
 
 /* footer */
 
