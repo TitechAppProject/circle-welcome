@@ -115,10 +115,11 @@ footer {
 }
 
 .footer_menu {
-    padding: 60px 128px;
+    padding: 60px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     /* gap: 96px; */
 }
 

@@ -2,18 +2,21 @@
 
 .top {
     width: 100%;
-    height: 440px;
-
-    position: relative; /* preview 画像の基準 */
-
+    /* height: 440px; */
     background: var(--brand-color-gradation);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding: 20px 0px;
 }
 
 #top_right_fig {
-    position: absolute;
+    flex-shrink: 1;
+    flex-grow: 0;
     width: 600px;
-    top: 73px;
-    right: -80px;
 }
 
 .top_left {
@@ -21,20 +24,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 94px;
-    padding-left: 128px;
     gap: 24px;
-
-    /* position: absolute; */
-    /* width: 557px;
-    height: 251px;
-    left: 128px;
-    top: 94px; */
-
-    margin: 0px;
+    padding-left: 72px;
 }
 
 .top_left_copy {
+    /* width: 300px; */
     color: var(--base-color-white);
     /* Inside auto layout */
     flex: none;
@@ -139,6 +134,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
+    width: 100%;
 
     flex: none;
     order: 0;
@@ -153,6 +149,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 64px;
     padding: 0px 16px;
 }
@@ -173,7 +171,7 @@
     gap: 16px;
 
     /* width: 464px; */
-    height: 180px;
+    /* height: 180px; */
 
     background: var(--base-color-white);
     border: 1px solid var(--base-color-disabled);
@@ -236,7 +234,7 @@
 .main_service_card_description {
     /* caption */
     color: var(--base-color-primary);
-    width: 320px;
+    width: 210px;
     flex-grow: 1;
 }
 
@@ -274,8 +272,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 
-    height: 160px;
+    /* height: 160px; */
     width: 100%;
     padding: 37px 60px;
     gap: 32px;
