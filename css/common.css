@@ -116,6 +116,7 @@ footer {
 
 .footer_menu {
     padding: 60px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
