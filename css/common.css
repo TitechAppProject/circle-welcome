@@ -109,7 +109,7 @@ header {
 
 footer {
     width: 100%;
-    height: 342px;
+    /* height: 342px; */
 
     background-color: var(--brand-color-primary);
 }

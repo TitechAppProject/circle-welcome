@@ -16,7 +16,7 @@
 #top_right_fig {
     flex-shrink: 1;
     flex-grow: 0;
-    width: 600px;
+    width: min(600px, 50vw);
 }
 
 .top_left {
@@ -29,7 +29,7 @@
 }
 
 .top_left_copy {
-    /* width: 300px; */
+    width: 300px;
     color: var(--base-color-white);
     /* Inside auto layout */
     flex: none;
