@@ -151,7 +151,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 64px;
+    gap: 32px;
     padding: 0px 16px;
 }
 
@@ -274,6 +274,8 @@
     align-items: center;
     justify-content: space-around;
 
+    flex-wrap: wrap;
+
     /* height: 160px; */
     width: 100%;
     padding: 37px 60px;
@@ -345,24 +347,20 @@
 /* - faq */
 .main_faq {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    /* gap: 100px; */
-    width: 100%;
-    justify-content: space-between;
-}
-
-.main_faq_text {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
+    width: 100%;
+}
 
-    flex-grow: 1;
-    width: 80px;
-    height: 24px;
+.main_faq_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
 }
 
 .main_faq_button {
@@ -380,4 +378,110 @@
 .main_faq_button_text {
     /* subcopy */
     color: var(--base-color-white);
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 24px 0px;
+        gap: 30px;
+    }
+
+    #top_right_fig {
+        width: 100vw;
+    }
+
+    .top_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding-left: 0px;
+    }
+
+    .top_left_copy {
+        width: min(300px, 95vw);
+    }
+    .main {
+        gap: 40px;
+        padding: 24px;
+    }
+
+    .main_part {
+        gap: 24px;
+    }
+
+    .main_service_card_description {
+        width: 100px;
+        /* 最小値 */
+        flex-grow: 1;
+    }
+
+
+    .main_cando_section {
+        gap: 16px;
+    }
+
+    .main_cando_subsection {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .main_invite {
+        padding: 24px;
+        gap: 20px;
+        background: var(--brand-color-gradation);
+        border-radius: 16px;
+    }
+
+    .main_environment_subsection {
+        gap: 16px;
+    }
+
+    .main_environment_subsubsections {
+        flex-direction: column;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .main_environment_subsubsection {
+        gap: 8px;
+    }
+
+    .main_faq {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_faq_text {
+        width: 100%;
+    }
+
+    .main_faq_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 24px;
+        gap: 10px;
+
+        background: var(--brand-color-secondary);
+        border-radius: 1000px;
+    }
+
+    .main_faq_button_text {
+        /* subcopy */
+        color: var(--base-color-white);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #phone_header_right {
+        display: none;
+    }
 }
