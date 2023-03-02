@@ -92,3 +92,18 @@
     /* caption */
     color: var(--base-color-primary);
 }
+
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    .faq {
+        gap: 40px;
+        padding: 40px 24px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #phone_header_right {
+        display: none;
+    }
+}
