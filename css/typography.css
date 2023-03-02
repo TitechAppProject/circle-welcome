@@ -57,3 +57,28 @@ body {
     font-size: 14px;
     line-height: 150%;
 }
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    .pagetitle {
+        font-size: 24px;
+    }
+    .pop-up_title {
+        font-size: 20px;
+    }
+    .copy {
+        font-size: 16px;
+    }
+    .subcopy {
+        font-size: 14px;
+    }
+    .section_title {
+        font-size: 12px;
+    }
+    .caption {
+        font-size: 12px;
+    }
+    .description {
+        font-size: 14px;
+    }
+}
