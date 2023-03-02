@@ -255,7 +255,7 @@ footer {
 
     #phone_header_right_x:checked~#phone_header_right_3 span:nth-child(1) {
         transform: translateY(8.5px) rotate(45deg);
-        background-color: var(--brand-color-primary);
+        background-color: var(--base-color-primary);
     }
 
     #phone_header_right_x:checked~#phone_header_right_3 span:nth-child(2) {
@@ -264,7 +264,7 @@ footer {
 
     #phone_header_right_x:checked~#phone_header_right_3 span:nth-child(3) {
         transform: translateY(-8.5px) rotate(-45deg);
-        background-color: var(--brand-color-primary);
+        background-color: var(--base-color-primary);
     }
 
     #phone_header_right_menu {
