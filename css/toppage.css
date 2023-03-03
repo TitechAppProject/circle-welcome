@@ -317,14 +317,18 @@
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
+    width: 100%;
 }
 
 .main_environment_subsubsections {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 0px;
-    gap: 65px;
+    column-gap: 24px;
+    row-gap: 32px;
+    flex-wrap: wrap;
 
     width: 100%;
 }
@@ -336,7 +340,8 @@
     padding: 0px;
     gap: 16px;
 
-    width: 100%;
+    width: calc(50vw - 128px - 24px);
+    box-sizing: border-box;
 
     color: var(--base-color-primary);
 }
@@ -499,6 +504,7 @@
     }
 
     .main_environment_subsubsection {
+        width: 100%;
         gap: 8px;
     }
 
