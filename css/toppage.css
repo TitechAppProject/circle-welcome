@@ -440,16 +440,16 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        padding-left: 0px;
+        padding-left: 12px;
     }
 
     .top_left_copy {
         width: min(300px, 90vw);
-        font-size: clamp(20px, 9vw, 30px);
+        font-size: clamp(20px, 8vw, 30px);
     }
 
     .top_left_text {
-        font-size: clamp(10px, 3.9vw, 16px);
+        font-size: clamp(10px, 3.7vw, 16px);
     }
 
     .main {
@@ -521,6 +521,31 @@
         flex-wrap: wrap;
         padding: 0px;
         gap: 8px;
+    }
+}
+
+@media screen and (max-width: 375.5px) {
+    .main_service {
+        width: 86vw;
+    }
+
+    #main_service_titechapp {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #main_service_titechinfo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .main_service_card_button {
+        margin-left: 5vw;
+        gap: 0px;
+    }
+
+    .main_service_card_button_text {
+        font-size: clamp(10px, 4vw, 20px);
     }
 }
 
