@@ -347,40 +347,78 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 8px;
+    gap: 48px;
     width: 100%;
 }
 
-.main_faq_text {
+.faq_text {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0px;
-    width: 100%;
+    gap: 56px;
 }
 
-.main_faq_button {
+.faq_QA {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.faq_Q {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-
-    background: var(--brand-color-secondary);
-    border-radius: 1000px;
+    padding: 0px;
+    gap: 16px;
 }
 
-.main_faq_button_text {
+.faq_Q_Q {
+    /* copy */
+    color: var(--brand-color-primary);
+}
+
+.faq_A {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.faq_A_A {
+    /* copy */
+    color: var(--brand-color-secondary);
+}
+
+.faq_A_answer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2px;
+    gap: 4px;
+}
+
+.faq_text {
     /* subcopy */
-    color: var(--base-color-white);
+    color: var(--base-color-primary);
 }
+
+.faq_caption {
+    /* caption */
+    color: var(--base-color-primary);
+}
+
+
 
 
 
 /* responsive */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900.5px) {
     .top {
         flex-direction: column;
         align-items: center;
@@ -403,6 +441,7 @@
     .top_left_copy {
         width: min(300px, 95vw);
     }
+
     .main {
         gap: 40px;
         padding: 24px;
@@ -457,31 +496,21 @@
     .main_faq {
         flex-direction: column;
         align-items: flex-start;
+        gap: 32px;
     }
+    
 
-    .main_faq_text {
-        width: 100%;
-    }
-
-    .main_faq_button {
+    .faq_text {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 24px;
-        gap: 10px;
-
-        background: var(--brand-color-secondary);
-        border-radius: 1000px;
-    }
-
-    .main_faq_button_text {
-        /* subcopy */
-        color: var(--base-color-white);
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        gap: 8px;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900.5px) {
     #phone_header_right {
         display: none;
     }

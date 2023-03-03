@@ -2,6 +2,7 @@ body {
     height: 100%;
     position: relative;
     background: var(--background-color-white);
+    font-size-adjust: 0.8;
 }
 
 /* header */
@@ -116,7 +117,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* gap: 96px; */
+    justify-content: space-around;
 }
 
 #footer_logo {
@@ -125,7 +126,7 @@ footer {
 
     flex: none;
     order: 0;
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 .footer_about {
@@ -140,7 +141,7 @@ footer {
 
     flex: none;
     order: 1;
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 .footer_toc {
@@ -155,7 +156,7 @@ footer {
 
     flex: none;
     order: 2;
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 .footer_toc_top {
@@ -201,7 +202,7 @@ footer {
 
 
 /* responsive */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900.5px) {
     header {
         height: 44px;
     }
@@ -289,8 +290,8 @@ footer {
     }
 
     .header_right_button {
-        padding: 0px 8px;
-        height: 32px;
+        padding: 0px 10px;
+        height: 34px;
         border-radius: 20px;
     }
 
@@ -303,10 +304,12 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: space-around;
     }
 
     #footer_logo {
-        width: 80vw;
+        width: min(80vw, 310px);
+        flex-grow: 0;
     }
 
     .footer_about {
@@ -325,11 +328,11 @@ footer {
 
         flex: none;
         order: 2;
-        flex-grow: 1;
+        flex-grow: 0;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900.5px) {
     #phone_header {
         display: none;
     }
