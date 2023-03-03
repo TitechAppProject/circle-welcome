@@ -439,7 +439,12 @@
     }
 
     .top_left_copy {
-        width: min(300px, 95vw);
+        width: min(300px, 90vw);
+        font-size: clamp(20px, 9vw, 30px);
+    }
+
+    .top_left_text {
+        font-size: clamp(10px, 3.9vw, 16px);
     }
 
     .main {
@@ -449,6 +454,10 @@
 
     .main_part {
         gap: 24px;
+    }
+
+    .main_service_card {
+        padding: 16px;
     }
 
     .main_service_card_description {
@@ -498,7 +507,6 @@
         align-items: flex-start;
         gap: 32px;
     }
-    
 
     .faq_text {
         display: flex;
