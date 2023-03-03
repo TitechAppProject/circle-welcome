@@ -413,11 +413,20 @@
     color: var(--base-color-primary);
 }
 
-.faq_caption {
-    /* caption */
+.faq_description {
+    /* description */
     color: var(--base-color-primary);
 }
 
+
+.faq_br {
+    font-weight: 700;
+}
+
+.faq_bluebr {
+    font-weight: 700;
+    color: var(--brand-color-primary);
+}
 
 
 
