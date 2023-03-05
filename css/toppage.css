@@ -449,7 +449,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        padding-left: 12px;
+        padding-left: 4px;
     }
 
     .top_left_copy {
@@ -533,7 +533,17 @@
     }
 }
 
+@media screen and (min-width: 599.5px) and (max-width: 900.5px) {
+    .top_left {
+        margin-left: calc(135px - 25%);
+    }
+}
+
 @media screen and (max-width: 375.5px) {
+    .top_left_button_text {
+        font-size: clamp(10px, 4.3vw, 16px);
+    }
+
     .main_service {
         width: 86vw;
     }
