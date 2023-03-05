@@ -65,7 +65,7 @@ body {
     }
 }
 
-/* @media screen and (max-width: 375.5px) {
+@media screen and (max-width: 375.5px) {
     .pagetitle {
         font-size: 24px;
     }
@@ -93,4 +93,4 @@ body {
     .description {
         font-size: 14px;
     }
-} */
+}
