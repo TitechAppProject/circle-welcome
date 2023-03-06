@@ -296,24 +296,29 @@ footer {
     }
 
 
-
     .footer_menu {
-        padding: 24px;
-        gap: 20px;
+        padding: 44px;
+        gap: 48px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     #footer_logo {
-        width: min(80vw, 310px);
+        width: min(70vw, 310px);
         flex-grow: 0;
+        order: 0;
     }
 
     .footer_about {
-        gap: 8px;
+        gap: 24px;
+        order: 2;
+    }
+
+    .footer_button {
+        order: 1;
     }
 
     .footer_toc {
