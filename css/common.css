@@ -2,7 +2,7 @@ body {
     height: 100%;
     position: relative;
     background: var(--background-color-white);
-    font-size-adjust: 0.8;
+    /* font-size-adjust: 0.8; */
 }
 
 /* header */
