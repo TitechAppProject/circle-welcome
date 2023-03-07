@@ -380,11 +380,12 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 16px;
+    gap: 13px;
 }
 
 .faq_Q_Q {
     /* copy */
+    margin-top: -2px;
     color: var(--brand-color-primary);
 }
 
