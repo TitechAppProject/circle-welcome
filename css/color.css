@@ -16,3 +16,15 @@
     --error-color: #ea3223;
     --warning-color: #d8ac3d;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --base-color-primary: #cccccc;
+        --base-color-secondary: rgba(196, 196, 191, 0.6);
+        --base-color-disabled: #1f1f1f;
+        --base-color-white: #000000;
+
+        --background-color-white: #000000;
+        --base-color-gray: #101010;
+    }
+}
