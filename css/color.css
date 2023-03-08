@@ -33,7 +33,7 @@
         --black-unchanged: #333333;
     }
 
-    .main_invite {
+    .main_service_card_button_text, .main_invite {
         --base-color-primary: #333333;
         --base-color-white: #ffffff;
         --background-color-white: #ffffff;
