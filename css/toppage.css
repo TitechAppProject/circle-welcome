@@ -578,6 +578,12 @@
     }
 }
 
+@media screen and (min-width: 1249.5px) {
+    .br_top {
+        display: none;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     header {
         background-color: #333333;
