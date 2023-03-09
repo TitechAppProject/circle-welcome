@@ -307,7 +307,8 @@ footer {
     }
 
     #footer_logo {
-        width: min(70vw, 310px);
+        width: min(70vw, 310.22px);
+        height: calc(min(70vw, 310px) * 40 / 310.22);
         flex-grow: 1;
         order: 0;
     }
